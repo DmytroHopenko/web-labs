@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Lab 6</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form-wrap">
+        <form action="" id="form">
+          <div class="input-wrap">
+            <label for="sentence">Enter sentence</label>
+            <textarea id="sentence" name="sentence" type="text"> </textarea>
+            <p class="error-message"></p>
+          </div>
+          <div class="buttons-wrap">
+            <button type="submit">Count words</button>
+            <button type="reset">Clear input</button>
+          </div>
+        </form>
+        <div class="stats-wrap">
+        <p>Number of words: <span id="count"></span></p>
+        <p>Length of maximal word: <span id="max"></span></p>
+        <p>Length of minimum word: <span id="min"></span></p>
+        <p>Average length of words: <span id="average"></span></p>
+      </div>
+      </div>
+      
+    </div>
+    <script src="./js/calculation.js"></script>
+  </body>
+</html>
